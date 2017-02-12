@@ -40,7 +40,7 @@ describe.only('Set', function() {
       set.add(1)
 
       expect(set.isEmpty()).to.eql(false)
-    })    
+    })
   })
 
   context('contains', function() {
