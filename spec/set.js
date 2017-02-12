@@ -5,7 +5,7 @@ import Set from '../src/set'
 chai.use(chaiChange)
   let set
 
-describe('Set', function() {
+describe.only('Set', function() {
   beforeEach(function() {
     set = new Set()
   })

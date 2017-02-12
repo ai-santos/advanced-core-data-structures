@@ -28,7 +28,7 @@ export default class Set {
   }
 
   forEach(callback) {
-    const newSet = this.set.map(member => callback(member)) 
+    const newSet = this.set.map(member => callback(member))
     this.set = newSet
   }
 
@@ -52,7 +52,7 @@ export default class Set {
       if(match) newSet.push(member)
     })
     return newSet
-  } 
+  }
 
   difference(otherSet) {
     let newSet = this.set
@@ -68,7 +68,7 @@ export default class Set {
     let subset = true
     this.set.forEach((member) => {
       let match = otherSet.set.find(value => member === value)
-      if(!match) subset = false 
+      if(!match) subset = false
     })
     return subset
   }
