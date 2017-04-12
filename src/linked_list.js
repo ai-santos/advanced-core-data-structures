@@ -108,9 +108,9 @@ class LinkedList {
 
 const ll = new LinkedList()
 ll.insert(1)
-ll.insert(3)
+ll.insert(2)
 ll.insert(4)
-ll.insertBefore(3, 2)
-console.log(ll)
+ll.insertAfter(2, 3)
+console.log(ll.head.next)
 
 // export default LinkedList
